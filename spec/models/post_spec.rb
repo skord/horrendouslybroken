@@ -37,4 +37,12 @@ describe Post do
       post.should be_valid
     end
   end
+  context "assocications" do
+    it "should know about it's bucket" do
+      post.bucket.should eq Bucket
+    end
+    it "should know about it's comments" do
+      post.comments.should eq []
+    end
+  end
 end
