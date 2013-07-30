@@ -1,0 +1,9 @@
+p#notice = notice
+
+h3= @bucket.name
+
+= render @bucket.posts
+
+= link_to 'Edit', edit_bucket_path(@bucket)
+'|
+= link_to 'Back', buckets_path

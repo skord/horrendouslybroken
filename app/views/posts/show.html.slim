@@ -1,0 +1,10 @@
+- if @post.url.present?
+  h3= link_to @post.name, @post.url
+-else
+  h3= @post.name
+
+p= @post.description
+
+= link_to 'Edit', edit_post_path(@post)
+'|
+= link_to 'Back', posts_path
